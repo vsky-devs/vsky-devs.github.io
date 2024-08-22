@@ -1,5 +1,8 @@
 import adapter from '@sveltejs/adapter-static';
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
+import lang from './src/lib/translations/lang.js';
+
+const supportedLocales = Object.keys(lang);
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -14,7 +17,11 @@ const config = {
 		adapter: adapter(),
 		paths: {
 			base: process.argv.includes('dev') ? '' : process.env.BASE_PATH
-		}
+		},
+		prerender: {
+			// NOTE: You can modify your exported error pages here.
+			entries: supportedLocales.reduce((acc, locale) => [...acc, `/${locale}`, `/${locale}/401`, `/${locale}/403`, `/${locale}/404`, `/${locale}/500`], ['*']),
+		},
 	}
 };
 
