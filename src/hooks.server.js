@@ -20,7 +20,7 @@ export const handle = async ({ event, resolve }) => {
     if (!supportedLocales.includes(locale)) locale = defaultLocale;
 
     // 301 redirect
-    return new Response(undefined, { headers: { 'location': `/${locale}${pathname}` }, status: 301 });
+    return new Response(undefined, { headers: { 'location': `${pathname}` }, status: 301 });
   }
 
   // Add html `lang` attribute
