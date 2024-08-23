@@ -28,7 +28,7 @@ jobs:
 
       - name: build
         env:
-          BASE_PATH: 'vsky-devs.github.io'
+          BASE_PATH: '/${{ github.event.repository.name }}'
         run: |
           npm run build
 
