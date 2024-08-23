@@ -9,12 +9,12 @@ export const handle = async ({ event, resolve }) => {
 
   // Try to get locale from `pathname`.
   let locale = supportedLocales.find((l) => l === `${pathname.match(/[^/]+?(?=\/|$)/)}`.toLowerCase());
-
+  
   // If route locale is not supported
   if (!locale) {
     // Get user preferred locale
     locale = `${`${request.headers.get('accept-language')}`.match(/[a-zA-Z]+?(?=-|_|,|;)/)}`.toLowerCase();
-
+    console.log("LOCALE", locale)
     // Set default locale if user preferred locale does not match
     if (!supportedLocales.includes(locale)) locale = defaultLocale;
 
