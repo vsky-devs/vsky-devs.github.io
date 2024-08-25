@@ -5,4 +5,4 @@
 
 <h1>{m.about_page()}</h1>
 <p>{count}</p>
-<button on:click={() => count ++}>Increment</button>
+<button on:click={() => count ++}>{m.increment_number()}</button>
