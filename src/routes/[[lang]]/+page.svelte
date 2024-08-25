@@ -4,7 +4,7 @@
 
 </script>
 
-<h1>{m.home_page()}</h1>
+<h1 class="">{m.home_page()}</h1>
 
 
 <img src={sticker} alt="Sticker"/>
