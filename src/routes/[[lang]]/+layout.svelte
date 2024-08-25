@@ -5,7 +5,6 @@
 </script>
 
 <ParaglideJS {i18n}>
-
   <Header/>
   <slot></slot>
 </ParaglideJS>
