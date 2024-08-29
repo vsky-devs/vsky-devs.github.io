@@ -8,5 +8,7 @@
 <header class="container mx-auto">
     <a href="{base}/">{m.home_page()}</a>
     <a href="{base}/about">{m.about_page()}</a>
-    <LanguageSwitcher/>
+    <div>
+      <LanguageSwitcher/>
+    </div>
 </header>

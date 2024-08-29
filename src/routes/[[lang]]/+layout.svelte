@@ -9,3 +9,12 @@
   <Header/>
   <slot></slot>
 </ParaglideJS>
+
+
+
+<style>
+  :global(body) {
+    min-height: 100vh;
+    background-color: antiquewhite;
+  }
+</style>
