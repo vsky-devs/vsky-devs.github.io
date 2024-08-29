@@ -25,7 +25,6 @@
       controls = animate(info.target, translationStyles, {...translationOptions, ...isH1});
 
       return (leaveInfo) => {
-        console.log("leaveInfo", leaveInfo)
         animate(info.target, { opacity: 0, transform: "translateY(10%)" }, translationOptions);
         controls.stop();
       }

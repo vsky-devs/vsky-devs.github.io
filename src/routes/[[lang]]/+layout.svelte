@@ -22,5 +22,7 @@
   :global(body) {
     min-height: 100vh;
     background-color: antiquewhite;
+    font-family:  "Inter", system-ui;
   }
+
 </style>
