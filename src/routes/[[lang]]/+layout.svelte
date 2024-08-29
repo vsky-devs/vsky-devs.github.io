@@ -5,6 +5,12 @@
   import "../../app.css";
 </script>
 
+<svelte:head>
+  <title>Rent best place</title>
+  <meta name="keywords" content="rent, buy, sell, house, apartment, Wroclaw">
+  <meta name="author" content="Danylo Syniavskyi">
+</svelte:head>
+
 <ParaglideJS {i18n}>
   <Header/>
   <slot></slot>

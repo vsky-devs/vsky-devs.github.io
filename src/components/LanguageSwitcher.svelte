@@ -2,7 +2,6 @@
   import { page } from "$app/stores";
   import { i18n } from "$lib/i18n";
   import { availableLanguageTags, languageTag } from "$lib/paraglide/runtime";
-  import * as m from "$lib/paraglide/messages.js";
   import { slide } from "svelte/transition";
   import { quintOut } from "svelte/easing";
   import { clickOutside } from "$lib/clickOutSide";
