@@ -30,15 +30,16 @@
      use:clickOutside 
      on:click_outside={handleClickOutside}>
   <button 
-    class="shadow-md bg-white rounded-lg px-4 py-1 uppercase relative font-light text-md flex justify-center items-center gap-1"
-    on:click={() => isOpen = !isOpen}>{language}
+    class="rounded-lg px-4 py-1 uppercase relative font-light text-md flex justify-center items-center gap-1"
+    on:click={() => isOpen = !isOpen}>
+    {language}
     <span class="ml-1">{flag}</span>
     <ArrowDown color="gray" width="13px" height="13px" className="{isOpen ? "-scale-100" : ""}  transition-all duration-300 opacity-50"/>
   </button>
 
   {#if isOpen}
     <div 
-      class="flex flex-col absolute top-full justify-center items-center w-full bg-white mt-2 rounded-lg shadow-md" 
+      class="flex flex-col absolute top-full justify-center items-center w-full bg-white mt-3 md:mt-6 rounded-lg shadow-md" 
       transition:slide={{easing: quintOut, axis: 'y', duration: 500}}
     >
       {#each availableLanguageTags as lang}

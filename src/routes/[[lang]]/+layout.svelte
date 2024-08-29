@@ -13,7 +13,9 @@
 
 <ParaglideJS {i18n}>
   <Header/>
-  <slot></slot>
+  <main class="container mx-auto wrapper">
+    <slot></slot>
+  </main>
 </ParaglideJS>
 
 
