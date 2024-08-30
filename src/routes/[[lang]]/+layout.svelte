@@ -13,9 +13,10 @@
 
 <ParaglideJS {i18n}>
   <Header/>
-  <main class="container mx-auto wrapper">
+  <main class="container mx-auto wrapper pt-20 md:pt-24">
     <slot></slot>
   </main>
+
 </ParaglideJS>
 
 
@@ -25,6 +26,7 @@
     min-height: 100vh;
     background-color: antiquewhite;
     font-family:  "Inter", system-ui;
+    font-weight: 300;
   }
 
 </style>
