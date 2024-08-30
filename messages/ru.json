@@ -3,5 +3,7 @@
     "home_page": "Главная страница",
     "about_page": "О нас",
     "increment_number": "Добавить",
-    "change_language": "Поменяй язык"
+    "change_language": "Поменяй язык",
+    "contact_page": " Контакты",
+    "send_button": "Выслать"
 }

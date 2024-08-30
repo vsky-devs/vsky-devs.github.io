@@ -40,6 +40,7 @@
            transition:slide={{easing: quintOut, axis: 'y', duration: 500}}
       >
         <a class="p-1 hover:bg-gray-100 rounded-md" href="{base}/" on:click={() => isMobileMenuOpen = false}>{m.home_page()}</a>
+        <a class="p-1 hover:bg-gray-100 rounded-md" href="{base}/contact" on:click={() => isMobileMenuOpen = false}>{m.contact_page()}</a>
         <a class="p-1 hover:bg-gray-100 rounded-md" href="{base}/about" on:click={() => isMobileMenuOpen = false}>{m.about_page()}</a>
         <hr class="p-1">
         <a class="py-1 pr-4 pl-2 mb-2 bg-green-500 rounded-md self-start text-white flex items-center" href="tel:+48452979179">
