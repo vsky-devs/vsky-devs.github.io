@@ -28,6 +28,7 @@
         </div>
         <nav class="hidden md:block">
           <a class="mr-2" href="{base}/">{m.home_page()}</a>
+          <a class="mr-2" href="{base}/contact">{m.contact_page()}</a>
           <a href="{base}/about">{m.about_page()}</a>
         </nav>
         <div>
