@@ -28,7 +28,8 @@
 
 <div class="relative inline-block z-10" 
      use:clickOutside 
-     on:click_outside={handleClickOutside}>
+     on:click_outside={handleClickOutside}
+    >
   <button 
     class="rounded-lg px-4 py-1 uppercase relative font-light text-md flex justify-center items-center gap-1"
     on:click={() => isOpen = !isOpen}>

@@ -5,6 +5,7 @@
   import { slide } from "svelte/transition";
   import { quintOut } from "svelte/easing";
   import MenuIcon from "./svg/MenuIcon.svelte";
+  import { clickOutside } from "$lib/clickOutSide";
 
   let isMobileMenuOpen = false;
 </script>
@@ -29,7 +30,9 @@
     </div>
     {#if isMobileMenuOpen}
       <div class="absolute left-4 right-4 rounded-lg shadow-md bg-white flex md:hidden flex-col p-2 mt-2 z-0"
-            transition:slide={{easing: quintOut, axis: 'y', duration: 500}}
+           transition:slide={{easing: quintOut, axis: 'y', duration: 500}}
+           use:clickOutside
+           on:click_outside={() => isMobileMenuOpen = !isMobileMenuOpen}
       >
         <a class="p-1 hover:bg-gray-100 rounded-md" href="{base}/" on:click={() => isMobileMenuOpen = false}>{m.home_page()}</a>
         <a class="p-1 hover:bg-gray-100 rounded-md" href="{base}/about" on:click={() => isMobileMenuOpen = false}>{m.about_page()}</a>
