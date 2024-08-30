@@ -1,7 +1,7 @@
 <script>
-    let width = "20px";
-    let height = "20px";
-    let color = "#ffffff";
+   export let width = "20px";
+   export let height = "20px";
+   export let color = "#ffffff";
 </script>
 
 

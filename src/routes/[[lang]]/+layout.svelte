@@ -3,6 +3,7 @@
 	import { i18n } from '$lib/i18n';
   import Header from '../../components/Header.svelte';
   import "../../app.css";
+  import Footer from '../../components/Footer.svelte';
 </script>
 
 <svelte:head>
@@ -13,20 +14,18 @@
 
 <ParaglideJS {i18n}>
   <Header/>
-  <main class="container mx-auto wrapper pt-20 md:pt-24">
+  <main class="container mx-auto wrapper pt-20 md:pt-24 min-h-[95vh]">
     <slot></slot>
   </main>
-
+  <Footer/>
 </ParaglideJS>
 
 
 
 <style>
   :global(body) {
-    min-height: 100vh;
     background-color: antiquewhite;
     font-family:  "Inter", system-ui;
     font-weight: 300;
   }
-
 </style>
